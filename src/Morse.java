@@ -2,13 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Morse {
-    String[] code
-            = { ".-", "-...", "-.-.", "-..", ".",
-            "..-.", "--.", "....", "..", ".---",
-            "-.-", ".-..", "--", "-.", "---",
-            ".--.", "--.-", ".-.", "...", "-",
-            "..-", "...-", ".--", "-..-", "-.--",
-            "--.."};
+
     public static void morseToEnglish(String[] code,
                                       String morseCode)
     {
