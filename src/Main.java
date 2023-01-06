@@ -17,20 +17,31 @@ public class Main {
 
         // Given Strings
         try {
+            // morse to English
             System.out.println("Please input morse you want to translate");
             String morseCode = scan.nextLine();
-            System.out.println("Please input english you want to translate");
-            String englishLang = scan.nextLine();
 
-            // morse to English
             Morse.morseToEnglish(code, morseCode);
 
             System.out.println();
+            if (morseCode.equals("")) {
+                throw new Exception("");
+            }
 
+        }
+        catch (Exception e) {
+            System.out.println("Morse code went wrong!");
+        }
+
+        try {
             // English to morse code
+            System.out.println("Please input english you want to translate");
+            String englishLang = scan.nextLine();
+
             Morse.englishToMorse(code, englishLang);
+
         } catch (Exception e) {
-            System.out.println("Something went wrong, try again!");
+            System.out.println("English went wrong!");
         }
     }
 }
