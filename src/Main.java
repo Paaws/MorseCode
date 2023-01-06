@@ -21,13 +21,12 @@ public class Main {
             System.out.println("Please input morse you want to translate");
             String morseCode = scan.nextLine();
 
-            Morse.morseToEnglish(code, morseCode);
-
-            System.out.println();
             if (morseCode.equals("")) {
                 throw new Exception("");
+            } else {
+                Morse.morseToEnglish(code, morseCode);
             }
-
+            System.out.println();
         }
         catch (Exception e) {
             System.out.println("Morse code went wrong!");
